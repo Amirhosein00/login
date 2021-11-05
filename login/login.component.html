@@ -1,0 +1,77 @@
+<div class="background row">
+  <div class="container">
+    <div style="margin-bottom: 30px">
+      <label
+        for="exampleInputEmail1"
+        class="form-label"
+        style="margin-bottom: 30px; margin-left: 212px"
+        >Name</label
+      >
+      <input
+        type="text"
+        (input)="nameChange($event)"
+        class="form-control inputbox"
+        id="exampleInputEmail1"
+      />
+    </div>
+    <div style="margin-bottom: 30px">
+      <label class="form-label" style="margin-bottom: 30px; margin-left: 225px"
+        >Id</label
+      >
+      <input
+        #id
+        type="text"
+        (input)="idChange($event)"
+        class="form-control inputbox"
+      />
+    </div>
+    <div style="margin-bottom: 30px">
+      <label
+        for="exampleInputPassword1 "
+        class="form-label"
+        style="margin-bottom: 30px; margin-left: 200px"
+        >Password</label
+      >
+      <input
+        type="password"
+        (input)="passChange($event)"
+        class="form-control inputbox"
+        id="exampleInputPassword1"
+      />
+    </div>
+    <div style="margin-left: 140px; margin-bottom: 30px">
+      <button
+        (click)="onUser()"
+        type="submit"
+        class="btn btn-primary"
+        style="width: 180px"
+      >
+        Submit
+      </button>
+      <a (click)="onAddUser()" [routerLink]="" style="margin-left: -35px"
+        >new usser</a
+      >
+      <a (click)="onForgetUser()" [routerLink]="" style="margin-left: 100px"
+        >forget password</a
+      >
+    </div>
+    <div>
+      <button
+        *ngIf="adminButon"
+        (click)="loginAdmin()"
+        class="btn btn-primary"
+        style="margin-left: 140px"
+      >
+        Admin
+      </button>
+      <button
+        *ngIf="!adminButon"
+        (click)="cantLoginAdmin()"
+        class="btn btn-primary"
+        style="margin-left: 245px"
+      >
+        Admin Out
+      </button>
+    </div>
+  </div>
+</div>

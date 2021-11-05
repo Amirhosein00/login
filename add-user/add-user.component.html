@@ -1,0 +1,16 @@
+  <div class="container">
+        <div class="marginbottom">
+          <label  class="form-label marginbottom marginname">New Name</label>
+          <input #name type="text" (input)="nameAdd($event)" class="form-control inputbox " >
+        </div>
+        <div class="marginbottom">
+          <label  class="form-label marginbottom marginname">New Id</label>
+          <input #id type="text" (input)="nameAdd($event)" class="form-control inputbox " >
+        </div>
+        <div class="marginbottom">
+          <label  class="form-label marginbottom marginpass">New Password</label>
+          <input #password type="password" (input)="passAdd($event)"  class="form-control inputbox" >
+        </div>
+        <div class="marginbottom margin3">
+          <button (click)="onAddUsser(name.value , id.value , password.value )" type="submit" class="btn btn-primary">Add</button>
+        </div>

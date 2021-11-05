@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="marginbottom">
+    <label  class="form-label marginbottom marginname">User Name</label>
+    <input #name type="text" (input)="nameFind($event)" class="form-control inputbox " >
+  </div>
+  <div class="marginbottom">
+    <label  class="form-label marginbottom marginname">User Id</label>
+    <input #id type="text" (input)="idFind($event)" class="form-control inputbox " >
+  </div>
+
+  <div class="marginbottom margin3">
+    <button (click)="onFind()" type="submit" class="btn btn-primary">Find</button>
+    <p  [hidden] = "findedPass === '0'"> your Password is: {{findedPass}} </p>
+  </div>

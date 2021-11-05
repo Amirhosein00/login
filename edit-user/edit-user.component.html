@@ -1,0 +1,27 @@
+<div class="row">
+  <thead>
+  <label class="label form-label">edit user {{ users.id }} :</label>
+  <th scope="col">
+    <label class="label form-label">Name :</label>
+    <input #name class="form-control" type="text" [value]="users.name" />
+  </th>
+  <th scope="col">
+    <label class="label form-label">Id :</label>
+    <input #id class="form-control" type="text" [value]="users.id" />
+  </th>
+  <th scope="col">
+    <label class="label form-label">Password :</label>
+    <input #pass class="form-control" type="text" [value]="users.password" />
+  </th>
+  <br>
+  <button (click)="onSaveChanges(name.value, id.value , pass.value)" class="btn btn-primary marginleft1">Save Changes</button>
+  <button (click)="onBackAdmin()" class="btn btn-primary  marginleft">Back Admin</button>
+</thead>
+
+</div>
+
+
+
+
+
+

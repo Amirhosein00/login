@@ -1,0 +1,19 @@
+.background{
+  position:absolute;
+  top: 10%;
+  left: 35%;
+  display:flex;
+  align-content: center;
+  border: 5px solid slategray;
+  background-color: skyblue;
+  width: 500px;
+  height: 600px;
+  border-radius: 1.25rem;
+
+}
+.inputbox{
+  margin-left:50px;
+  width: 80%;
+  border-radius: 1.25rem;
+}
+
